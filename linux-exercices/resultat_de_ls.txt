@@ -1,0 +1,13 @@
+access.log
+commandes.md
+fichier1.txt
+fruits.txt
+noms.txt
+notes.md
+prive.txt
+renommefichier2.txt
+resultat_de_ls.txt
+script.sh
+secret.txt
+serveur.log
+test

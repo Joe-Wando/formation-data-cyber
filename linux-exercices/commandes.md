@@ -17,7 +17,7 @@ Fichier récap de toutes les commandes vues. Enrichi au fur et à mesure.
 - `touch fichier` : créer un fichier vide
 - `cp source destination` : copier
 - `mv source destination` : déplacer ou renommer
-- `rm fichier` : supprimer (⚠️ DÉFINITIF, pas de corbeille)
+- `rm fichier` : supprimer (DÉFINITIF, pas de corbeille)
 
 ## Écrire dans un fichier
 - `echo "texte" > fichier` : écrit dans le fichier (ÉCRASE le contenu)
@@ -68,3 +68,19 @@ Fichier récap de toutes les commandes vues. Enrichi au fur et à mesure.
 - `git add .` : préparer tous les changements
 - `git commit -m "message"` : figer les changements
 - `git push` : envoyer sur GitHub
+
+## Redirections avancées
+- `commande > fichier` : envoie le résultat normal dans un fichier (écrase)
+- `commande 2> fichier` : envoie les ERREURS dans un fichier
+- `commande 2> /dev/null` : envoie les erreurs à la poubelle (disparaissent)
+
+## Processus
+- `ps` : voir les processus de ma session
+- `ps aux` : voir tous les processus du système
+- `top` : voir les processus en temps réel (quitter avec `q`)
+- `kill PID` : arrêter un processus (avec son numéro PID)
+- `commande &` : lancer une commande en arrière-plan
+
+## Rechercher des fichiers
+- `find . -name "nom"` : cherche un fichier par nom (dans dossier courant + sous-dossiers)
+- `find . -name "*.txt"` : cherche tous les fichiers .txt (le * = n'importe quoi)
