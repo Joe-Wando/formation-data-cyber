@@ -1,0 +1,11 @@
+2024-01-15 08:12 LOGIN user=alice ip=192.168.1.10 status=success
+2024-01-15 08:15 LOGIN user=bob ip=192.168.1.22 status=failed
+2024-01-15 08:16 LOGIN user=bob ip=192.168.1.22 status=failed
+2024-01-15 08:17 LOGIN user=bob ip=192.168.1.22 status=failed
+2024-01-15 09:03 LOGIN user=alice ip=192.168.1.10 status=success
+2024-01-15 09:30 LOGIN user=charlie ip=10.0.0.5 status=success
+2024-01-15 10:45 LOGIN user=eve ip=203.0.113.9 status=failed
+2024-01-15 10:46 LOGIN user=eve ip=203.0.113.9 status=failed
+2024-01-15 10:47 LOGIN user=eve ip=203.0.113.9 status=failed
+2024-01-15 10:48 LOGIN user=eve ip=203.0.113.9 status=failed
+2024-01-15 11:00 LOGOUT user=alice ip=192.168.1.10 status=success

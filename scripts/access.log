@@ -1,0 +1,6 @@
+2024-01-15 10:23 LOGIN user=alice status=success
+2024-01-15 10:24 LOGIN user=bob status=failed
+2024-01-15 10:25 LOGIN user=alice status=failed
+2024-01-15 10:26 LOGOUT user=alice status=success
+2024-01-15 10:27 LOGIN user=charlie status=success
+2024-01-15 10:28 LOGIN user=bob status=failed

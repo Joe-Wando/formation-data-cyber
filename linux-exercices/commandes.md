@@ -84,3 +84,24 @@ Fichier récap de toutes les commandes vues. Enrichi au fur et à mesure.
 ## Rechercher des fichiers
 - `find . -name "nom"` : cherche un fichier par nom (dans dossier courant + sous-dossiers)
 - `find . -name "*.txt"` : cherche tous les fichiers .txt (le * = n'importe quoi)
+
+## Scripting bash
+- `#!/bin/bash` : première ligne obligatoire d'un script (shebang)
+- `chmod +x script.sh` : rendre un script exécutable
+- `./script.sh` : lancer un script
+- `# commentaire` : ligne ignorée par bash (pour expliquer le code)
+
+### Variables
+- `nom="valeur"` : créer une variable (PAS d'espace autour du =)
+- `$nom` : utiliser la valeur d'une variable
+- `total=$(commande)` : ranger le résultat d'une commande dans une variable
+
+### Conditions
+- Structure : `if [ condition ]` puis `then` ... `else` ... `fi`
+- Espaces obligatoires dans les crochets : `[ ... ]`
+- Comparateurs nombres : -eq (égal), -ne (différent), -gt (>), -ge (>=), -lt (<), -le (<=)
+- `[ -z "$1" ]` : teste si la variable est vide
+
+### Arguments
+- `$1` : premier argument passé au script (`./script.sh argument`)
+- `exit 1` : arrêter le script (1 = erreur)
