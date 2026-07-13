@@ -147,5 +147,20 @@ SELECT → FROM → WHERE → GROUP BY → ORDER BY
 - `.quit` : quitter SQLite
 - `Ctrl+L` : nettoyer l'écran
 
+## SQL — ordre complet des mots-clés (avec JOIN)
+
+SELECT colonne(s)
+FROM table1
+JOIN table2 ON table1.col = table2.col
+WHERE condition
+GROUP BY colonne
+ORDER BY colonne DESC;
+
+### Règles à retenir
+- JOIN avant WHERE
+- GROUP BY avant ORDER BY
+- WHERE filtre les lignes AVANT le groupement
+- JOIN et LEFT JOIN s'écrivent avant tout le reste
+
 ### Règle d'or
 Toute requête SQL se termine par `;`
