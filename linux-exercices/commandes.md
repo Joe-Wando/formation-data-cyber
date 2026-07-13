@@ -105,3 +105,47 @@ Fichier récap de toutes les commandes vues. Enrichi au fur et à mesure.
 ### Arguments
 - `$1` : premier argument passé au script (`./script.sh argument`)
 - `exit 1` : arrêter le script (1 = erreur)
+
+## SQL — commandes de base
+
+### Créer et remplir
+- `CREATE TABLE nom (col TYPE, ...)` : créer une table
+- `INTEGER` : type nombre entier / `TEXT` : type texte
+- `PRIMARY KEY` : clé primaire (identifiant unique de chaque ligne)
+- `INSERT INTO table (colonnes) VALUES (valeurs)` : ajouter une ligne
+- Texte entre guillemets simples `'...'`, nombres sans guillemets
+
+### Lire
+- `SELECT * FROM table` : tout afficher
+- `SELECT col1, col2 FROM table` : colonnes précises seulement
+
+### Filtrer
+- `WHERE condition` : filtrer les lignes
+- Opérateurs : `=` `>` `<` `>=` `<=` `!=`
+- `AND` : les deux conditions vraies (restrictif)
+- `OR` : au moins une condition vraie (large)
+
+### Trier
+- `ORDER BY colonne` : tri croissant (par défaut)
+- `ORDER BY colonne DESC` : tri décroissant
+
+### Calculer
+- `COUNT(*)` : compter les lignes ("combien")
+- `AVG(colonne)` : moyenne
+- `SUM(colonne)` : somme totale
+- `MIN(colonne)` / `MAX(colonne)` : plus petit / plus grand
+
+### Regrouper
+- `GROUP BY colonne` : calculer par catégorie
+
+### Ordre obligatoire des mots-clés
+SELECT → FROM → WHERE → GROUP BY → ORDER BY
+
+### Commandes SQLite (avec un point, pas du SQL)
+- `.tables` : lister les tables
+- `.schema table` : voir la structure d'une table
+- `.quit` : quitter SQLite
+- `Ctrl+L` : nettoyer l'écran
+
+### Règle d'or
+Toute requête SQL se termine par `;`
