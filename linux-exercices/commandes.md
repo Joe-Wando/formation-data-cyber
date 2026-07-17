@@ -164,3 +164,4 @@ ORDER BY colonne DESC;
 
 ### Règle d'or
 Toute requête SQL se termine par `;`
+
